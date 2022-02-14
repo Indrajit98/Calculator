@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.row{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 25px 25px 40px rgb(161, 161, 161);
+    
+}
+.output{
+    width: 250px;
+    height: 50px;
+    text-align: right;
+    padding: 5px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgb(39, 207, 16);
+    border: none;
+    box-shadow: inset 5px 5px 10px rgb(0, 0, 0, 0.5),
+                inset -5px -5px 10px rgb(0, 0, 0, 0.5);
+
+}
+.all-btn{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+.all-btn button{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50px;
+    border:none;
+    font-size: 25px;
+}
+.all-btn .clear{
+    grid-column:span 2;
+    width: 110px;
+    background: red;
+}
+.all-btn .plus{
+    grid-row: span 2;
+    height: 110px;
+}
